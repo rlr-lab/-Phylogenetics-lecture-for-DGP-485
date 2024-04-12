@@ -67,6 +67,8 @@ mafft --auto --thread -1 HIV1_CON_2021_pol_DNA.fasta > HIV1_CON_2021_pol_DNA_ali
 mafft --auto --thread -1 HIV1_CON_2021_env_DNA.fasta > HIV1_CON_2021_env_DNA_aligned.fasta
 ```
 
+Visualize each alignment with **seaview**.
+
 #### 2. Tree building (ML Phylogenies)
 
 Now that we have covered the theoretical background behind phylogenetic tree inference, we are going to practice using the ML method. We will analyze the intra-host evolution of HIV-1 using data from a study performed by Liao et a. (_Co-evolution of a broadly neutralizing HIV-1 antibody and founder virus. Nature 497(7446):469-76, 2013. doi:10.1038/nature12053 PMID 23552890._) 
@@ -99,16 +101,18 @@ We will view the alignment using the **Highlighter** tool from the HIV sequence 
 
 We will apply simple concepts of coalescence and phylodynamics to analyze the origin of the BA.4 lineage of SARS-CoV-2. We will use the alignment generated in **Exercise 1**. We will use TreeTime to perform this analysis.
 
-  1. Generate an ML tree as in **Exercise 2**
+  1. Check the alignment and assess QC with **Ugene**
+
+  2. Generate an ML tree as in **Exercise 2**
 ```
 iqtree2 -s SARSCoV2_BA4.sequences_aligned.fasta -T AUTO -B 1000
 ```
-  2. Use the output and metadata including dates to generate a temporal tree and coalescence analysis using ML approach.
+  3. Use the output and metadata including dates to generate a temporal tree and coalescence analysis using ML approach.
   
 ```
 treetime --confidence --relax 1.0 0.5 --aln SARSCoV2_BA4.sequences_aligned.fasta --tree SARSCoV2_BA4.sequences_aligned.fasta.treefile --dates SARSCoV2_BA4.metadata.tsv --coalescent skyline --clock-filter 4 --clock-rate 0.0008 --clock-std-dev 0.0004 --branch-length-mode marginal --outdir timetree_out
 ```
-  3. Perform ML ancestral state reconstruction to analyze phylogeography.
+  4. Perform ML ancestral state reconstruction to analyze phylogeography.
 
 ```
 treetime mugration --tree timetree_out/timetree.nexus --states SARSCoV2_BA4.metadata.tsv --attribute country
