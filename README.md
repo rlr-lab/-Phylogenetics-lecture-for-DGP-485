@@ -42,13 +42,13 @@ Then enter your NetID password and hit Enter.
 cd /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/
 ```
 
-**Create a working folder for results.**
+**Create a working folder for results and move there.**
 
 ```
 mkdir <NETID>
-
+```
+```
 cd <NETID>
-
 ```
 Again, here <NETID> is replaced with your NetID 
 
