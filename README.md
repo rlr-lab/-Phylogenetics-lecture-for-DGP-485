@@ -6,9 +6,21 @@
 _Ramon Lorenzo-Redondo, Ph.D._ (ramon.lorenzo@northwestern.edu)
 
 ### 1. Download the required software to your computer
-**Seaview**:https://doua.prabi.fr/software/seaview
+### Step 1.A - FigTree  <img src="../images/FigTree.png" width="60"/>
 
-**FigTree**: https://github.com/rambaut/figtree/releases
+[FigTree](http://tree.bio.ed.ac.uk/software/figtree/) is a program to view phylogenetic trees. Files that can be viewed in FigTree generally end with the suffix `.tre` or `.nwk`.  
+
+* To install, download the most recent version (v1.4.4) from this website: [https://github.com/rambaut/figtree/releases](https://github.com/rambaut/figtree/releases). 
+* If you have a Mac, download the file ending with `.dmg`. Create a new folder in your Applications folder and drag all of the files into that folder.
+* If you have a PC, download the file ending with `.zip`. Double-click and move all of the files into a new folder
+* If you have Linux, download the file ending with `.tgz`. Double-click and move all of the files into a new folder.
+
+### Step 1.B - SeaView  &nbsp;<img src="../images/seaview.png" width="50"/>
+
+[SeaView](http://doua.prabi.fr/software/seaview) is a program that can view and generate multiple sequence alignments of DNA and protein sequence as well as multiple other functions.
+
+* To install, download the correct version for your computer from here: [http://doua.prabi.fr/software/seaview](http://doua.prabi.fr/software/seaview) and follow the instructions on that site for proper installation. 
+* On Macs, you'll probably get a security alert when you try to open the program for the first time. To override this (it's OK!) open your _System Preferences_, click the _Security & Privacy_ icon, then click "Allow" next to SeaView in the window. Should be good to go.
 
 
 ### 2. Set up environment on Quest
@@ -19,12 +31,26 @@ Although the exercises can be run on a personal computer, we will set up a conda
 ```
 ssh <NETID>@login.quest.northwestern.edu
 ```
+Where <NETID> is replaced with your NetID (such as abc123 for example).
 
-**Move to the class folder**
+Then enter your NetID password and hit Enter.
+
+
+**Move to the lecture folder**
 
 ```
 cd /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/
 ```
+
+**Create a working folder for results.**
+
+```
+mkdir <NETID>
+
+cd <NETID>
+
+```
+Again, here <NETID> is replaced with your NetID 
 
 
 **Load Mamba module:**
@@ -32,43 +58,26 @@ cd /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/
 module load mamba
 ```
 
+**Activate environment with software:**
+I previously created an environment with necessary software
 
-**Load environment with software:**
 ```
 conda activate /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/conda_envs/Phylogenetics_DGP485
 ```
-***If you have never used mamba on Quest you will have to do this:***
+*If you have never used mamba on Quest you will have to do this:*
 
 ```
 conda init bash
 source ~/.bashrc
 ```
+*If you want to create the environment later somewhere else:*
 ```
 mamba create -c bioconda -n Phylogenetics_DGP485 \
 mafft \
 iqtree \
-treetime
+treetime \
+hyphy
 ```
-
-**Activate environment:**
-```
-mamba activate Phylogenetics_DGP485
-```
-
-**Create a working folder in your home directory for results.**
-
-```
-mkdir ~/Phylogenetics_DGP485
-
-cd ~/Phylogenetics_DGP485
-
-```
-
-**Copy all materials.**
-```
-cp -r /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/* .
-```
-
 
 ### Phylogenetic analyses
 #### 1. Alignments
