@@ -1,7 +1,7 @@
 # Phylogenetics In-Class Activity for DGP-485
 ## DGP-485 Data Science for Biomedical Researchers
 
-## April 15, 2024
+## April 14, 2025
 
 _Ramon Lorenzo-Redondo, Ph.D._ (ramon.lorenzo@northwestern.edu)
 
@@ -10,18 +10,39 @@ _Ramon Lorenzo-Redondo, Ph.D._ (ramon.lorenzo@northwestern.edu)
 
 **FigTree**: https://github.com/rambaut/figtree/releases
 
-**Unipro UGENE**:http://ugene.net/
 
 ### 2. Set up environment on Quest
-Although the exercises can be run on a personal computer, we will set up a conda environment to get familiar with command line and setting up environments with all necessary tools. Use the following command to install the rest of the tools in your new environment. You can also use your own computer if mamba or conda is installed.
+Although the exercises can be run on a personal computer, we will set up a conda environment to get familiar with command line and setting up environments with all necessary tools. Use the following command to install the rest of the tools in your new environment. 
 
-**Load Mamba module (not necessary if using own device):**
+**Log into Quest**
+
+```
+ssh <NETID>@login.quest.northwestern.edu
+```
+
+**Move to the class folder**
+
+```
+cd /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/
+```
+
+
+**Load Mamba module:**
 ```
 module load mamba
 ```
 
 
-**Create environment with software:**
+**Load environment with software:**
+```
+conda activate /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/conda_envs/Phylogenetics_DGP485
+```
+***If you have never used mamba on Quest you will have to do this:***
+
+```
+conda init bash
+source ~/.bashrc
+```
 ```
 mamba create -c bioconda -n Phylogenetics_DGP485 \
 mafft \
