@@ -6,7 +6,7 @@
 _Ramon Lorenzo-Redondo, Ph.D._ (ramon.lorenzo@northwestern.edu)
 
 ### 1. Download the required software to your computer
-### Step 1.A - FigTree  <img src="../images/FigTree.png" width="60"/>
+### Step 1.A - FigTree  
 
 [FigTree](http://tree.bio.ed.ac.uk/software/figtree/) is a program to view phylogenetic trees. Files that can be viewed in FigTree generally end with the suffix `.tre` or `.nwk`.  
 
@@ -15,7 +15,7 @@ _Ramon Lorenzo-Redondo, Ph.D._ (ramon.lorenzo@northwestern.edu)
 * If you have a PC, download the file ending with `.zip`. Double-click and move all of the files into a new folder
 * If you have Linux, download the file ending with `.tgz`. Double-click and move all of the files into a new folder.
 
-### Step 1.B - SeaView  &nbsp;<img src="../images/seaview.png" width="50"/>
+### Step 1.B - SeaView  
 
 [SeaView](http://doua.prabi.fr/software/seaview) is a program that can view and generate multiple sequence alignments of DNA and protein sequence as well as multiple other functions.
 
