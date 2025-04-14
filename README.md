@@ -159,7 +159,7 @@ iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_
   3. Use the output and metadata including dates to generate a temporal tree and coalescence analysis using ML approach.
   
 ```
-treetime --confidence --relax 1.0 0.5 --aln /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta --tree SARSCoV2_BA4_Aligned_NoRef.fasta.treefile --dates SARSCoV2_BA4.metadata.tsv --coalescent skyline --clock-filter 4 --clock-rate 0.0008 --clock-std-dev 0.0004 --branch-length-mode marginal --outdir timetree_out
+treetime --confidence --relax 1.0 0.5 --aln /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta --tree /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta.treefile --dates /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4.metadata.tsv --coalescent skyline --clock-filter 4 --clock-rate 0.0008 --clock-std-dev 0.0004 --branch-length-mode marginal --outdir timetree_out
 ```
 
 
