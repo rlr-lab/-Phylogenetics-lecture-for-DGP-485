@@ -152,7 +152,7 @@ We will apply simple concepts of coalescence and phylodynamics to analyze the or
 
   2. Generate an ML tree as in **Exercise 2**
 ```
-iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta -T AUTO -alrt 1000 -pre ./SARSCoV2_BA4_Aligned_NoRef.fasta
+iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta -T AUTO -m GTR+F+R4 -alrt 1000 -pre ./SARSCoV2_BA4_Aligned_NoRef.fasta
 ```
   *This tree takes long to run so we can use the output already available for the next step, but you can run it later.*
   
