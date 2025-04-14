@@ -154,6 +154,8 @@ We will apply simple concepts of coalescence and phylodynamics to analyze the or
 ```
 iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/SARSCoV2_BA4_Aligned_NoRef.fasta -T AUTO -alrt 1000 -pre ./SARSCoV2_BA4_Aligned_NoRef.fasta
 ```
+  *This tree takes long to run so we can use the output already available for the next step, but you can run it later.*
+  
   3. Use the output and metadata including dates to generate a temporal tree and coalescence analysis using ML approach.
   
 ```
