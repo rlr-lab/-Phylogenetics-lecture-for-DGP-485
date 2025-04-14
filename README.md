@@ -111,7 +111,7 @@ Then enter your NetID password and hit Enter.
 Now that we have covered the theoretical background behind phylogenetic tree inference, we are going to practice using the ML method. We will analyze the intra-host evolution of HIV-1 using data from a study performed by Liao et a. (_Co-evolution of a broadly neutralizing HIV-1 antibody and founder virus. Nature 497(7446):469-76, 2013. doi:10.1038/nature12053 PMID 23552890._) 
 
 ```
-iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/IntraHostHIVenvLiao2013_NoStop_subalign.fasta -T AUTO -pre ./IntraHostHIVenvLiao2013_NoStop_subalign.fasta 
+iqtree2 -s /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/IntraHostHIVenvLiao2013_NoStop_subalign.fasta -T AUTO -B 100 -pre ./IntraHostHIVenvLiao2013_NoStop_subalign.fasta 
 ```
 
 We will visualize the tree with **FigTree** and save Newick file
