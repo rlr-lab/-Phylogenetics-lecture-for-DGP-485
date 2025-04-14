@@ -168,3 +168,5 @@ treetime mugration --tree timetree_out/timetree.nexus --states /projects/e30682/
 ```
 
 We will visualize the tree and perform initial analysis with **FigTree**
+
+I recommend to check ggtree for better visualization options: https://yulab-smu.top/treedata-book/
