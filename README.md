@@ -125,6 +125,8 @@ Upload the Newick file: IntraHostHIVenvLiao2013_NoStop_subalign.fasta.treefile.n
 ```
 hyphy meme --alignment /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/IntraHostHIVenvLiao2013_NoStop_subalign.fasta --tree /projects/e30682/Phylogenetics_DGP485_Materials_Lorenzo/IntraHostHIVenvLiao2013_NoStop_subalign.fasta.treefile.nwk --output hyphy_meme_IntraHostHIVenvLiao2013_NoStop_subalign
 ```
+We can visualize the results using http://vision.hyphy.org
+
 
 Alternatively, we can use the Datamonkey server:
 
